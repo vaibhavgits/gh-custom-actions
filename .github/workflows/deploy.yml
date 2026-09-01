@@ -14,12 +14,10 @@ jobs:
         uses: ./.github/actions/cached-deps
         with:
           caching: 'false'
+      - name: Output information
+        run: echo "CAche Used? ${{steps.cache-deps.outputs.used-caceh}}"
       - name: Lint code
         run: npm run lint
-      - name: Output information
-        run: echo "CAche Used? ${{steps.cache-deps.outputs.used-cache}} "
-  
-  
   
   test:
     runs-on: ubuntu-latest
