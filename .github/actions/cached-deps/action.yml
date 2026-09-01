@@ -3,7 +3,7 @@ description: 'get and cache dependencies via npm and cache them'
 
 # Declare custom inputs here
 inputs:
-  # caching is a custom name here
+  # caching is a custom name here, name anything
   caching:
     description: 'whether to cache dependencies or not'
     required: false
