@@ -15,6 +15,11 @@ jobs:
           caching: 'false'
       - name: Lint code
         run: npm run lint
+      - name: Output information
+        run: echo "CAche Used? ${{steps.cache-deps.outputs.used-cache}} "
+  
+  
+  
   test:
     runs-on: ubuntu-latest
     steps:
